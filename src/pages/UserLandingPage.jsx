@@ -3,6 +3,7 @@ import PrimarySearchAppBar from "../components/AppBar";
 import Carousal from "../components/Carousal";
 import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/core/styles";
+import Catergories from "../components/Catergories";
 
 const useStyles = makeStyles({
   root: {
@@ -11,6 +12,7 @@ const useStyles = makeStyles({
   },
   grid: {},
 });
+
 export default function UserLandingPage() {
   const classes = useStyles();
   return (
@@ -18,6 +20,7 @@ export default function UserLandingPage() {
       <PrimarySearchAppBar />
       <div className={classes.grid}>
         <Carousal />
+        <Catergories />
       </div>
     </div>
   );
